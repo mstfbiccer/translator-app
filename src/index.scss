@@ -1,0 +1,143 @@
+$theme_text_color:#ccc;
+$theme_sec_text_color:rgba(204, 204, 204, 0.6);
+$theme_background:#202029;
+$textarea_background:#2b2d39;
+
+.App-header {
+    display: flex;
+    flex-direction: row;
+    align-content: space-between;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.textareas {
+    font-family: sans-serif;
+    resize: none;
+    border-radius: 10px;
+    background: $textarea_background;
+    margin-left: 20px;
+    padding: 10px;
+    color: $theme_text_color;
+}
+
+.textarea-title {
+    color: #87878aa1;
+    margin-left: 24px;
+    font-family: sans-serif;
+    margin-bottom: 10px;
+}
+
+body {
+    background:$theme_background;
+}
+
+.recently-translate-container {
+    .recently-items {
+        color: $theme_sec_text_color;
+        margin: 10px;
+        cursor: pointer;
+        font-family: sans-serif;
+        width: 50%;
+        background: rgb(204 204 204 / 64%);
+        color: #202029;
+        margin: 10px auto auto;
+        padding: 10px;
+        border-radius: 5px;
+
+    }
+    
+    .recently-inputs {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        align-items: flex-start;
+        position: relative;
+        align-content: flex-start;
+        max-height: 100px;
+        overflow: hidden;
+    }
+    
+    .recently-icon, .recently-input, .recently-output {
+        margin: 10px;
+    }
+    .recently-trash {
+        position: absolute;
+        right: 0;
+        color: #83494e;
+    }
+        
+    .recently-title {
+        font-family: sans-serif;
+        color: $theme_text_color;
+        text-align: center;
+    
+    }
+}
+
+svg.listen-btn {
+    top: 80%;
+    color: $theme_text_color;
+    font-size: 30px;
+    cursor: pointer;
+    position: absolute;
+    left: 30px;
+}
+.listen-btn {
+    &.active {
+        color:#e22424;
+    }
+    &.passive {
+        color:#ccc;
+    }
+}
+
+svg.send-btn {
+    top: 80%;
+    color: $theme_text_color;
+    font-size: 30px;
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+}
+
+.input-container {
+    position: relative;
+}
+
+.output-container {
+    position: relative;
+}
+
+.output-container {
+    .volume-btn {
+        top: 80%;
+        color: $theme_text_color;
+        font-size: 30px;
+        cursor: pointer;
+        position: absolute;
+        right: 10px;
+    }
+}
+
+.main-title {
+    text-align: center;
+    color: $theme_text_color;
+    font-family: sans-serif;
+}
+
+
+.clear-history {
+    text-align: center;
+    background: #ff7d7d70;
+    color: $theme_sec_text_color;
+    margin: 10px;
+    cursor: pointer;
+    font-family: sans-serif;
+    width: 50%;
+    margin: 10px auto auto;
+    padding: 10px;
+    border-radius: 10px;
+}
